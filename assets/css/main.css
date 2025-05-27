@@ -3962,13 +3962,14 @@ input, select, textarea {
 
 /* NEW STYLING */
 	@font-face {
- 	 font-family: 'Basteleur';
- 	 src: url('assets/fonts/Basteleur-Bold.woff2') format('woff2'),
-       url('assets/fonts/Basteleur-Bold.woff') format('woff');
- 	 font-weight: normal;
- 	 font-style: normal;
- 	 font-display: swap;
-	}
+  		font-family: 'Basteleur';
+  		src: url('../webfonts/Basteleur-Bold.woff2') format('woff2'),
+       url('../webfonts/Basteleur-Bold.woff') format('woff');
+ 		font-weight: normal;
+ 		font-style: normal;
+  		font-display: swap;
+}
+
 
 	.custom-hero {
   	text-align: center;
