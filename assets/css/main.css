@@ -3993,3 +3993,18 @@ input, select, textarea {
   		margin-bottom: 2rem;
 	}
 
+	.typewriter-message {
+ 	 font-family: 'Courier New', Courier, monospace;
+  	font-size: 1.2rem;
+  	color: #ccc;
+  	line-height: 1.6;
+  	max-width: 600px;
+  	margin: 0 auto;
+  	text-align: center;
+}
+
+	.typewriter-message a {
+  	color: #fff;
+  	text-decoration: underline;
+}
+
