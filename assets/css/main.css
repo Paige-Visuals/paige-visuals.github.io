@@ -3950,3 +3950,13 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/* NEW STYLING */
+.hero-heading {
+  font-family: 'Anton', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.1;
+}
