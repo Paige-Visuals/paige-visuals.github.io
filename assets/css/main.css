@@ -9,6 +9,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'LeMurmure';
+  src: url('../fonts/LeMurmure-Regular.woff2') format('woff2'),
+       url('../fonts/LeMurmure-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /*
 	Forty by HTML5 UP
@@ -3964,13 +3973,14 @@ input, select, textarea {
 
 /* NEW STYLING */
 	@font-face {
-  font-family: 'Basteleur';
-  src: url('../webfonts/Basteleur-Bold.woff2') format('woff2'),
-       url('../webfonts/Basteleur-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  	font-family: 'LeMurmure';
+  	src: url('../webfonts/LeMurmure-Regular.woff2') format('woff2'),
+       url('../webfonts/LeMurmure-Regular.woff') format('woff');
+ 	 font-weight: normal;
+  	font-style: normal;
+  	font-display: swap;
 }
+
 
 .custom-hero {
   text-align: center;
@@ -3988,12 +3998,12 @@ input, select, textarea {
 
 /* New banner section styles */
 .main-heading {
-	font-family: 'Basteleur', serif;
+	font-family: 'LeMurmure', serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: left;
-  color: red;
+  color: pink;
 }
 
 .left-align {
