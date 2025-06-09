@@ -4025,3 +4025,9 @@ input, select, textarea {
   text-decoration: underline dotted;
 }
 
+.tiles h3 {
+  font-family: 'Sigmar', cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
