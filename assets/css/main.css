@@ -3988,12 +3988,12 @@ input, select, textarea {
 
 /* New banner section styles */
 .main-heading {
-   font-family: 'Basteleur', serif;
+	font-family: 'Basteleur', serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: left;
-  color: #fff;
+  color: red;
 }
 
 .left-align {
