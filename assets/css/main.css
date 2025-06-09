@@ -2783,7 +2783,11 @@ input, select, textarea {
 			}
 
 			.tiles article h3 {
+				font-family: 'Sigmar', cursive;
 				font-size: 1.75em;
+				font-weight: 400;
+				letter-spacing: 0.5px;
+				color: #fff;
 			}
 
 				.tiles article h3 a:hover {
