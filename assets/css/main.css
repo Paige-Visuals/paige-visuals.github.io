@@ -2788,7 +2788,17 @@ input, select, textarea {
 				font-weight: 400;
 				letter-spacing: 0.5px;
 				color: #fff;
+				text-transform: none;       /* 👈 Prevent all caps */
+				line-height: 1.1;           /* 👈 Tighten spacing */
+				text-align: left;           /* 👈 Align text to left */
+				margin-bottom: 0.5em;
+				position: relative;
 			}
+
+			.tiles article h3::after {
+				display: none !important;  /* 👈 Hide underline */
+			}
+
 
 				.tiles article h3 a:hover {
 					color: inherit !important;
@@ -3148,7 +3158,7 @@ input, select, textarea {
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
-		text-transform: uppercase;
+		text-transform: none; /* Make sure text appears as typed */
 		top: 0;
 		width: 100%;
 		z-index: 10000;
