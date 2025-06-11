@@ -4054,3 +4054,13 @@ input, select, textarea {
   line-height: 1.2;
   text-align: left;
 }
+
+.tiles article header.major h3 {
+  font-family: 'Sigmar', cursive !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  line-height: 1.2 !important;
+  text-align: left !important;
+  margin-bottom: 0 !important;
+  border: none !important;
+}
