@@ -2867,7 +2867,8 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			.tiles article:nth-child(6n - 5):before {
+			/* COMMENTED THESE ACTIONS OUT AS THEY WERE IN TEMPLATE, AND CAUSING ISSUES WITH WHAT I WAS TRYING TO ACHIEVE */ 
+			/* .tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
 			}
 
@@ -2889,7 +2890,7 @@ input, select, textarea {
 
 			.tiles article:nth-child(6n):before {
 				background-color: #87c5a4;
-			}
+			} */
 
 		@media screen and (max-width: 1280px) {
 
