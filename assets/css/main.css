@@ -314,6 +314,12 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	/* Prevent font fallback flicker */
+.tiles article h3 {
+  font-family: 'Sigmar One', cursive;
+}
+
+
 /* Row */
 
 	.row {
@@ -4045,6 +4051,11 @@ input, select, textarea {
   border: none !important;
 }
 
-.tiles article:before {
-	background: rgba(0, 0, 0, 0.45) !important; /* Dark overlay */
+.tiles article.style1:before,
+.tiles article.style2:before,
+.tiles article.style3:before,
+.tiles article.style4:before,
+.tiles article.style5:before,
+.tiles article.style6:before {
+	background: rgba(0, 0, 0, 0.45) !important;
 }
