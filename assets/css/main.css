@@ -2788,11 +2788,9 @@ input, select, textarea {
 				font-weight: 400;
 				letter-spacing: 0.5px;
 				color: #fff;
-				text-transform: none;       /* 👈 Prevent all caps */
+				text-transform: none; !important;  /* 👈 Prevent all caps */
 				line-height: 1.1;           /* 👈 Tighten spacing */
 				text-align: left;           /* 👈 Align text to left */
-				margin-bottom: 0.5em;
-				position: relative;
 			}
 
 			.tiles article h3::after {
@@ -4049,9 +4047,10 @@ input, select, textarea {
   text-decoration: underline dotted;
 }
 
-.tiles h3 {
-  font-family: 'Sigmar', cursive;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+/* Override tile heading styles */
+.tiles article h3 {
+  text-transform: none !important;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-align: left;
 }
-
