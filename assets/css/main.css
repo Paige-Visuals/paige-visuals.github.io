@@ -2794,6 +2794,10 @@ input, select, textarea {
 				text-align: left;           /* 👈 Align text to left */
 			}
 
+			.tiles article.style1 h3 {
+  				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+			}
+
 			.tiles article h3::after {
 				display: none !important;  /* 👈 Hide underline */
 			}
@@ -2802,6 +2806,7 @@ input, select, textarea {
 				.tiles article h3 a:hover {
 					color: inherit !important;
 				}
+
 
 			.tiles article .link.primary {
 				border: 0;
@@ -2827,8 +2832,7 @@ input, select, textarea {
 				position: absolute;
 				width: 100%;
 				z-index: 2;
-				background: none !important; /* 💥 THIS LINE */
-
+				background: rgba(0, 0, 0, 0.45) !important; /* Dark overlay */
 			}
 
 			.tiles article:after {
