@@ -314,12 +314,6 @@ input, select, textarea {
 		text-align: right;
 	}
 
-	/* Prevent font fallback flicker */
-.tiles article h3 {
-  font-family: 'Sigmar One', cursive;
-}
-
-
 /* Row */
 
 	.row {
@@ -2790,15 +2784,18 @@ input, select, textarea {
 			}
 
 			.tiles article h3 {
-				font-family: 'Sigmar One', cursive;
-				font-size: 1.75em;
-				font-weight: 400;
-				letter-spacing: 0.5px;
-				color: #fff;
-				text-transform: none; !important;  /* 👈 Prevent all caps */
-				line-height: 1.1;           /* 👈 Tighten spacing */
-				text-align: left;           /* 👈 Align text to left */
-			}
+  				font-family: 'Sigmar One', cursive;
+ 				font-size: 1.75em;
+  				font-weight: 400;
+  				letter-spacing: 0.5px;
+  				color: #fff;
+  				text-transform: none;
+  				line-height: 1.1;
+  				text-align: left;
+  				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  				font-display: swap;
+}
+
 
 			.tiles article.style1 h3 {
   				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
@@ -2825,20 +2822,18 @@ input, select, textarea {
 			}
 
 			.tiles article:before {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
-				bottom: 0;
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				opacity: 1;
-				position: absolute;
-				width: 100%;
-				z-index: 2;
-			}
+ 				content: '';
+  				position: absolute;
+  				top: 0;
+  				left: 0;
+  				width: 100%;
+  				height: 100%;
+  				background: rgba(0, 0, 0, 0.45); /* soft dark overlay */
+  				z-index: 2;
+  				transition: opacity 0.5s ease;
+  				opacity: 1;
+}
+
 
 			.tiles article:after {
 				background: none !important;
@@ -2853,7 +2848,7 @@ input, select, textarea {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.2; /* optional – tweak or remove to keep overlay solid */
 			}
 
 			.tiles article.is-transitioning {
@@ -4031,31 +4026,4 @@ input, select, textarea {
 .rebuild-note a {
   color: #fff;
   text-decoration: underline dotted;
-}
-
-/* Override tile heading styles */
-.tiles article h3 {
-  text-transform: none !important;
-  letter-spacing: normal;
-  line-height: 1.2;
-  text-align: left;
-}
-
-.tiles article header.major h3 {
-  font-family: 'Sigmar', cursive !important;
-  text-transform: none !important;
-  letter-spacing: 0 !important;
-  line-height: 1.2 !important;
-  text-align: left !important;
-  margin-bottom: 0 !important;
-  border: none !important;
-}
-
-.tiles article.style1:before,
-.tiles article.style2:before,
-.tiles article.style3:before,
-.tiles article.style4:before,
-.tiles article.style5:before,
-.tiles article.style6:before {
-	background: rgba(0, 0, 0, 0.45) !important;
 }
