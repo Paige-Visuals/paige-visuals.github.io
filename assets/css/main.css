@@ -2739,30 +2739,41 @@ input, select, textarea {
 }
 
 .tiles article {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 2em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  height: 40vh;
-  min-height: 300px;
-  width: 50%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: none !important;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	padding: 2em;
+	width: 100%;
+	min-height: 300px;
+	height: 40vh;
+	box-shadow: none;
+	transition: none;
 }
 
-.tiles article .image {
-  display: none;
+.tiles article:before,
+.tiles article:after {
+	display: none !important;
+	content: none !important;
+	background: none !important;
 }
 
 .tiles article header {
-  z-index: 2;
-  text-align: left;
+	position: relative;
+	z-index: 1;
+	color: white;
+	text-shadow: none;
+	background: rgba(0, 0, 0, 0.4); /* Optional: gives text better contrast */
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+
+.tiles article .image {
+  display: none;
 }
 
 .tiles article h3 {
