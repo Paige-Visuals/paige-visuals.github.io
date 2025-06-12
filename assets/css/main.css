@@ -3991,16 +3991,12 @@ input, select, textarea {
 
 /* New banner section styles */
 .main-heading {
-	font-family: 'LeMurmure', serif;
+font-family: 'LeMurmure', serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: left;
   color: pink;
-}
-
-.left-align {
-  text-align: left;
 }
 
 .tagline {
