@@ -2732,187 +2732,72 @@ input, select, textarea {
 
 /* Tiles */
 
-	.tiles {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		border-top: 0 !important;
-	}
-
-		.tiles + * {
-			border-top: 0 !important;
-		}
-
-		.tiles article {
-			-moz-align-items: center;
-			-webkit-align-items: center;
-			-ms-align-items: center;
-			align-items: center;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
-			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
-			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
-			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
-			padding: 4em 4em 2em 4em ;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 300px;
-			overflow: hidden;
-			position: relative;
-			width: 40%;
-		}
-
-			.tiles article .image {
-				display: none;
-			}
-
-			.tiles article header {
-				position: relative;
-				z-index: 3;
-			}
-
-			.tiles article h3 {
-  				font-family: 'Sigmar', cursive;
- 				font-size: 1.75em;
-  				font-weight: 400;
-  				letter-spacing: 0.5px;
-  				color: #fff;
-  				text-transform: none;
-  				line-height: 1.1;
-  				text-align: left;
-  				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  				font-display: swap;
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 0;
 }
 
-
-			.tiles article.style1 h3 {
-  				text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-			}
-
-			.tiles article h3::after {
-				display: none !important;  /* 👈 Hide underline */
-			}
-
-
-				.tiles article h3 a:hover {
-					color: inherit !important;
-				}
-
-
-			.tiles article .link.primary {
-				border: 0;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 4;
-			}
-
-			.tiles article:before {
- 				content: '';
-  				position: absolute;
-  				top: 0;
-  				left: 0;
-  				width: 100%;
-  				height: 100%;
-  				background: rgba(0, 0, 0, 0.45); /* soft dark overlay */
-  				z-index: 2;
-  				transition: opacity 0.5s ease;
-  				opacity: 1;
+.tiles article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 40vh;
+  min-height: 300px;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
 }
 
+.tiles article .image {
+  display: none;
+}
 
-			.tiles article:after {
-				background: none !important;
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-				z-index: 1;
-			}
+.tiles article header {
+  z-index: 2;
+  text-align: left;
+}
 
-			.tiles article:hover:before {
-				opacity: 0.2; /* optional – tweak or remove to keep overlay solid */
-			}
+.tiles article h3 {
+  font-family: 'Sigmar', cursive;
+  font-size: 1.75em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-transform: none;
+  line-height: 1.1;
+  margin: 0 0 0.5em 0;
+}
 
-			.tiles article.is-transitioning {
-				-moz-transform: scale(0.95);
-				-webkit-transform: scale(0.95);
-				-ms-transform: scale(0.95);
-				transform: scale(0.95);
-				-moz-filter: blur(0.5em);
-				-webkit-filter: blur(0.5em);
-				-ms-filter: blur(0.5em);
-				filter: blur(0.5em);
-				opacity: 0;
-			}
+.tiles article p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  margin: 0;
+}
 
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
-			}
+.tiles article h3 a {
+  color: inherit;
+  text-decoration: none;
+}
 
-		@media screen and (max-width: 1280px) {
+.tiles article h3 a:hover {
+  color: #9bf1ff;
+}
 
-			.tiles article {
-				padding: 4em 3em 2em 3em ;
-				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
-			}
+@media screen and (max-width: 980px) {
+  .tiles article {
+    width: 100%;
+  }
+}
 
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.tiles article {
-				width: 50% !important;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.tiles article {
-				padding: 3em 1.5em 1em 1.5em ;
-				height: 16em;
-				max-height: none;
-				min-height: 0;
-			}
-
-				.tiles article h3 {
-					font-size: 1.5em;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.tiles {
-				display: block;
-			}
-
-				.tiles article {
-					height: 20em;
-					width: 100% !important;
-				}
-
-		}
 
 /* Contact Method */
 
