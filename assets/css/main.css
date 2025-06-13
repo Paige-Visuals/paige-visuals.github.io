@@ -2773,11 +2773,6 @@ input, select, textarea {
 	border-radius: 0.5em;
 }
 
-
-.tiles article .image {
-  display: block;
-}
-
 .tiles article h3 {
   font-family: 'Sigmar', cursive;
   font-size: 1.75em;
