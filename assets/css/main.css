@@ -3928,17 +3928,23 @@ font-family: 'LeMurmure', serif;
 }
 
 #banner {
-  padding: 5rem 2rem;
-  background-color: #1e1e3f; /* or any contrasting color */
+  background-color: #111 !important;
+  padding: 5rem 2rem !important;
 }
 
-#banner .inner {
-  max-width: 1000px;
-  margin: 0 auto;
+#banner .main-heading {
+  color: #fff !important;
+  font-size: 3rem;
+  background: red;
 }
 
-#banner h1,
-#banner .tagline,
+#banner .tagline {
+  color: yellow !important;
+  background: green;
+}
+
 #banner .rebuild-note {
-  display: block;
+  background-color: orange !important;
+  color: black !important;
 }
+
