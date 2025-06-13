@@ -7,6 +7,19 @@
 <html>
 	<head>
 		<style>
+  /* --- FIX: Disable theme animations on banner --- */
+  #banner,
+  #banner .inner,
+  #banner .major,
+  #banner .tagline,
+  #banner .rebuild-note {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  /* --- Your existing custom banner styles --- */
   #banner.major {
     background: none;
     padding: 4rem 1rem 2rem 1rem;
@@ -44,6 +57,7 @@
     line-height: 1.6;
   }
 </style>
+
 
 
 
