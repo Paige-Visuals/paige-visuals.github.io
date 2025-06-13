@@ -117,6 +117,7 @@
 		});
 
 	// Tiles.
+	/* -----COMMENTING OUT .TILES AS I'M TRYING TO GET TILES TO SHOW MY IMAGES-----
 		var $tiles = $('.tiles > article');
 
 		$tiles.each(function() {
@@ -125,7 +126,7 @@
 				$image = $this.find('.image'), $img = $image.find('img'),
 				$link = $this.find('.link'),
 				x;
-
+	*/
 			// Image.
 
 				// Set image.
