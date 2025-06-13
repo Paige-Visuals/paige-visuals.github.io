@@ -2773,7 +2773,7 @@ input, select, textarea {
 
 
 .tiles article .image {
-  display: none;
+  display: block;
 }
 
 .tiles article h3 {
