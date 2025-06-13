@@ -2771,6 +2771,8 @@ input, select, textarea {
 	background: rgba(0, 0, 0, 0.4); /* Optional: gives text better contrast */
 	padding: 1em;
 	border-radius: 0.5em;
+	max-width: 100%;
+  	word-break: break-word;
 }
 
 .tiles article h3 {
