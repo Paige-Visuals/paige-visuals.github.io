@@ -2748,7 +2748,6 @@ input, select, textarea {
 	align-items: flex-end;
 	justify-content: flex-start;
 	padding: 2em;
-	width: 33.3333%;
 	min-height: 300px;
 	height: 40vh;
 	box-shadow: none;
@@ -2813,6 +2812,25 @@ input, select, textarea {
     width: 100%;
   }
 }
+
+.tiles a {
+  text-decoration: none;
+  display: block;
+  width: 33.3333%;
+}
+
+@media screen and (max-width: 980px) {
+  .tiles a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tiles a {
+    width: 100%;
+  }
+}
+
 
 
 /* Contact Method */
