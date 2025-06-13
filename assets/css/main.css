@@ -3926,3 +3926,19 @@ font-family: 'LeMurmure', serif;
   color: #fff;
   text-decoration: underline dotted;
 }
+
+#banner {
+  padding: 5rem 2rem;
+  background-color: #1e1e3f; /* or any contrasting color */
+}
+
+#banner .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#banner h1,
+#banner .tagline,
+#banner .rebuild-note {
+  display: block;
+}
