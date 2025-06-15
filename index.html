@@ -7,7 +7,16 @@
 <html>
 	<head>
 		<style>
-  /* --- Your existing custom banner styles --- */
+  /* Ensure banner is visible, overriding fade-in animations */
+  #banner,
+  #banner .inner {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  /* Clean banner styling */
   #banner.major {
     background: none;
     padding: 4rem 1rem 2rem 1rem;
@@ -34,16 +43,14 @@
   }
 
   .rebuild-note p {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid #ffffff33;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #eee;
-  line-height: 1.6;
-}
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #eee;
+    line-height: 1.6;
+    background: none;
+    border: none;
+  }
 </style>
-
-
 
 
 		<title>Paige Johnston</title>
@@ -59,7 +66,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	</head>
 
-	<body class="is-preload">
+	<body>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
