@@ -7,26 +7,32 @@
 <html>
 	<head>
 		<style>
-  /* Keep banner visible */
+  /* Force disable animations & overlays */
   #banner,
-  #banner .inner {
+  #banner .inner,
+  .major,
+  .tagline,
+  .rebuild-note {
     opacity: 1 !important;
     transform: none !important;
     filter: none !important;
     transition: none !important;
   }
 
-  /* Clean, minimal banner layout */
+  /* Strip all default backgrounds and boxes */
   #banner.major {
-    background: none;
+    background: none !important;
+    box-shadow: none !important;
     padding: 4rem 1rem 2rem 1rem;
     text-align: center;
     display: block !important;
+    border: none !important;
   }
 
   #banner .inner {
     max-width: 800px;
     margin: 0 auto;
+    background: none !important;
   }
 
   .main-heading {
@@ -34,12 +40,14 @@
     color: white;
     font-weight: 700;
     margin-bottom: 1rem;
+    background: none !important;
   }
 
   .tagline {
     font-size: 1.2rem;
     color: #aaa;
     margin-bottom: 1.5rem;
+    background: none !important;
   }
 
   .rebuild-note p {
@@ -47,10 +55,11 @@
     font-size: 1rem;
     color: #ccc;
     line-height: 1.6;
-    background: transparent;
+    background: none !important;
     border-left: 3px solid #666;
   }
 </style>
+
 
 
 
